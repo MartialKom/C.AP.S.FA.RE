@@ -411,10 +411,13 @@ def open_Toplevel6():
     top6.mainloop()
     
 def principale():
+    global s
     sfr= SimpleFacerec()
     sfr.load_encoding_images("image/")
+    value(t1)
+    s = int(value(t1))
 #Démarrer la caméra (webcam)
-    cap= cv2.VideoCapture(1)
+    cap= cv2.VideoCapture(s)
 
     while True:
         ret, frame= cap.read()
