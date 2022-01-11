@@ -411,7 +411,7 @@ def open_Toplevel6():
     top6.mainloop()
     
 def principale():
-    global s
+    
     sfr= SimpleFacerec()
     sfr.load_encoding_images("image/")
     value(t1)
